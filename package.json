@@ -5,6 +5,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@popperjs/core": "^2.11.0",
     "@testing-library/jest-dom": "^5.11.4",
