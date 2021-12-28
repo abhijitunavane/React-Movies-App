@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";// eslint-disable-next-line
+import styles from "./App.module.css";
+import { Home, Category, Navbar, NotFound, Search, Cast } from "./components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  const [searchedResult, setSearchedResult] = useState();
+  // eslint-disable-next-line
+  const [category, setCategory] = useState();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter forceRefresh={true}>
+      <div className="App">
+        <Navbar setCategory={setCategory} setSearchedResult={setSearchedResult} />
+
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search/:category" element={<Search searchedResult={searchedResult} />} />
+          <Route path="/:category/:id" element={<Category />} />
+          <Route path="/:category/:id/cast" element={<Cast />} />
+
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

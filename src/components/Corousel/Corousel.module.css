@@ -1,0 +1,15 @@
+.corousel_container {
+    overflow-y: hidden;
+}
+.img {
+    width: 140px;
+    aspect-ratio: 9 / 15;    
+}
+
+.title_link {
+    color: black;
+}
+
+.title_link:hover {
+    color: #3498db;
+}

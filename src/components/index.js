@@ -1,0 +1,11 @@
+export {default as Navbar} from "./Navbar/Navbar";
+export {default as Home} from "./Home/Home";
+export {default as NotFound} from "./NotFound/NotFound";
+export {default as Search} from "./Search/Search";
+export {default as Card} from "./Card/Card";
+export {default as Category} from "./Category/Category";
+export {default as Person} from "./Category/Person";
+export {default as ShortCards} from "./ShortCards/ShortCards";
+export {default as Corousel} from "./Corousel/Corousel";
+export {default as Popular} from "./Popular/Popular";
+export {default as Cast} from "./Cast/Cast";
