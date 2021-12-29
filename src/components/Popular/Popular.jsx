@@ -1,4 +1,6 @@
 import {Corousel} from '../';
+
+
 function Popular({ data, type }) {
   return (
     <div className="py-2">

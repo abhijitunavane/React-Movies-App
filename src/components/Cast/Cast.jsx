@@ -82,7 +82,7 @@ function Cast() {
                       <img
                         style={{ width: "60px" }}
                         className="rounded"
-                        src={`https://image.tmdb.org/t/p/original${item.profile_path}`}
+                        src={`https://image.tmdb.org/t/p/w220_and_h330_face${item.profile_path}`}
                         onError={(e) => {
                           e.target.src = default_img;
                         }}
@@ -127,7 +127,7 @@ function Cast() {
                       <img
                         style={{ width: "60px" }}
                         className="rounded"
-                        src={`https://image.tmdb.org/t/p/original${item.profile_path}`}
+                        src={`https://image.tmdb.org/t/p/w220_and_h330_face${item.profile_path}`}
                         onError={(e) => {
                           e.target.src = default_img;
                         }}

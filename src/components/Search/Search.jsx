@@ -14,13 +14,18 @@ function Search() {
   const query = searchParams.get("q");
 
   const fetchData = async (category, term) => {
+    try {
     const data = await getSearchedResults(category, term);
+
     setSearchedResult(data.data.results);
 
     if (!data.data.results.length) {
       setNotFound(true);
     }
     setLoading(false);
+  } catch(e) {
+    console.log(e);
+  }
   };
 
   useEffect(() => {
@@ -46,10 +51,10 @@ function Search() {
 
   if (notFound) {
     return (
-      <div>
-        <p className="lead p-2">You searched for : {query}</p>
+      <div className="container mt-2">
+        <p className="lead">You searched for : {query}</p>
         <h1>Results Not Found 😕</h1>
-        <span className="text-primary"><label style={{cursor: "pointer"}} htmlFor="search">Click here to search again!</label></span>
+        <span className="btn btn-outline-dark"><label style={{cursor: "pointer"}} htmlFor="search">Click here to search again!</label></span>
       </div>
     );
   }

@@ -9,7 +9,7 @@ function ShortCards({ img, name, date, overview, id, media_type }) {
           <Link to={`/${media_type}/${id}`}>
             <img
               className="w-100"
-              src={`https://image.tmdb.org/t/p/original/${img}`}
+              src={`https://www.themoviedb.org/t/p/w220_and_h330_face/${img}`}
               alt=" ..."
               onError={e => {e.target.src = default_img}}
             />

@@ -71,7 +71,7 @@ function Person({ data, externalIds, movieCredits, tvCredits }) {
             <div className="col-12 text-center text-md-start">
               <img
                 className={styles.img}
-                src={`https://image.tmdb.org/t/p/original/${data.profile_path}`}
+                src={`https://image.tmdb.org/t/p/w220_and_h330_face/${data.profile_path}`}
                 onError={e => {e.target.src = default_img}}
                 alt="..."
               />

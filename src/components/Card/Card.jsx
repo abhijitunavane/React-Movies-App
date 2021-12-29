@@ -136,7 +136,7 @@ function Card({
         <div
           className="rounded"
           style={{
-            background: `url('https://image.tmdb.org/t/p/original/${data.backdrop_path}') center no-repeat`,
+            background: `url('https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/${data.backdrop_path}') center no-repeat`,
           }}
         >
           <div
@@ -148,7 +148,7 @@ function Card({
           >
             <img
               className="col-md-4 p-0 rounded"
-              src={`https://image.tmdb.org/t/p/original/${data.poster_path}`}
+              src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2/${data.poster_path}`}
               alt="..."
             />
             <div className="col-md-8 card-text text-start text-white p-4">

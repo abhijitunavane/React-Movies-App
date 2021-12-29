@@ -58,6 +58,7 @@ const Navbar = ({setCategory}) => {
                 type="search"
                 placeholder="Search"
                 onChange={handleChange}
+                required
               />
               <button
                 className="btn btn-outline-light rounded-0 d-flex gap-2"
