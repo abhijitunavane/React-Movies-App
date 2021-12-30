@@ -9,4 +9,4 @@
 - FontAwesome Icons
 
 # Website published on
-- Netlify [https://wwww.react-moviesapp.netlify.app]
+- Netlify [https://www.react-moviesapp.netlify.app]
