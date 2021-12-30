@@ -4,10 +4,9 @@ import { api_key } from './config';
 const url = "https://api.themoviedb.org/3";
 
 // Get response by searching the query
-export const getSearchedResults = async (category, searchTerm, page=1) => {
-    const data = await axios.get(`${url}/search/${category}?api_key=${api_key}&query=${searchTerm}&page=${page}`);
+export const getSearchedResults = async (searchTerm, page=1) => {
+    const data = await axios.get(`${url}/search/multi?api_key=${api_key}&query=${searchTerm}&page=${page}`);
     
-    // console.log(data);
     return data;
 };
 // Get All the genres

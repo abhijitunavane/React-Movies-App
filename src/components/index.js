@@ -9,3 +9,4 @@ export {default as ShortCards} from "./ShortCards/ShortCards";
 export {default as Corousel} from "./Corousel/Corousel";
 export {default as Popular} from "./Popular/Popular";
 export {default as Cast} from "./Cast/Cast";
+export {default as ListGroup} from "./ListGroup/ListGroup";

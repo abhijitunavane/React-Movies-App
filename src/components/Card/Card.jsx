@@ -109,7 +109,7 @@ function Card({
   }
   return (
     <div className="card m-2 py-3 px-md-5 text-center text-md-start">
-      <div className="card-header mb-3 d-flex justify-content-between">
+      <div className="card-header mb-3 d-flex align-items-center justify-content-between">
         <div>
           <h2>{data.title || data.original_name}</h2>
         </div>
@@ -195,10 +195,10 @@ function Card({
           </div>
           <div className="col-md-6 ">
             <iframe
-              title={trailer}
-              className="w-100 align-self-center"
-              style={{ aspectRatio: "16/9" }}
+              className="w-100"
+              style={{aspectRatio: "16/9"}}
               src={`https://www.youtube.com/embed/${trailer}`}
+              title="YouTube video player"
             ></iframe>
           </div>
         </div>

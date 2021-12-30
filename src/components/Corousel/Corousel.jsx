@@ -20,7 +20,6 @@ function Corousel({ data, type }) {
             rel="noreferrer"
             className="text-dark text-decoration-none"
             href={`/${type}/${data[index].id}`}
-            target="_blank"
             style={style}
           >
             <div>

@@ -13,9 +13,9 @@ function Search() {
   const [loading, setLoading] = useState(true);
   const query = searchParams.get("q");
 
-  const fetchData = async (category, term) => {
+  const fetchData = async (term) => {
     try {
-    const data = await getSearchedResults(category, term);
+    const data = await getSearchedResults(term);
 
     setSearchedResult(data.data.results);
 
@@ -29,7 +29,7 @@ function Search() {
   };
 
   useEffect(() => {
-    fetchData(category, query);
+    fetchData(query);
 
     return () => {
       setSearchedResult();
