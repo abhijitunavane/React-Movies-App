@@ -1,3 +1,12 @@
-# Getting Started with Create React App
+# React-Movies-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Online database of information of films, tv and persons involved in this area.
+
+# Used technologies
+- ReactJs
+- API : themoviedb.org[https://www.themoviedb.org/]
+- Bootstrap
+- FontAwesome Icons
+
+# Website published on
+- Netlify [https://wwww.react-moviesapp.netlify.app]
